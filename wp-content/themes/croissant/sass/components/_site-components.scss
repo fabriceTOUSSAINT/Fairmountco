@@ -1,0 +1,31 @@
+a.btn {
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-decoration: none;
+    @include prefix(transition, all ease  .15s, webkit ms);
+
+    &_light {
+      border: solid #f1fffa 2px;
+      color: #f1fffa;
+
+      &:hover {
+        background-color: #f1fffa;
+        color: $color__text-main;
+      }
+    }
+
+    &_dark {
+        border: solid $color__text-main 2px;
+        color: $color__text-main;
+
+        &:hover {
+            background-color: $color__text-main;
+            color: #f1fffa;
+        }
+    }
+}
+
+.btn_wrapper {
+    text-align: center;
+    margin: 40px 0;
+}

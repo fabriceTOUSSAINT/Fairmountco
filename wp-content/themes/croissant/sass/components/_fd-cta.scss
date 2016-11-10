@@ -1,0 +1,48 @@
+.sub-hero-cta {
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+  }
+  .dinner-cta {
+    background-image: url('http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/2.jpg');
+
+    .cta-block {
+      background-color: #4a2b03;
+      &:hover{
+        background-color: rgba(74, 43, 3, .7);
+      }
+    }
+  }
+  .drink-cta {
+    background-image: url('http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/2-1.jpg');
+
+    .cta-block {
+      background-color: #0d1b2a;
+      &:hover {
+        background-color: rgba(13, 27, 42, .7);
+      }
+    }
+  }
+
+  .col-sm {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 265px;
+    padding: 0;
+  }
+  .cta-block{
+    z-index: 10;
+    position: absolute;
+    @include prefix(transition, all ease .5s, webkit ms);
+    height: 100%;
+    width: 100%;
+    color: #f1fffa;
+    padding: 50px;
+  }
+}

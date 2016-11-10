@@ -1,0 +1,41 @@
+.middle-block {
+  background-image: url('http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/about-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center
+
+
+}
+
+.about {
+    text-align: center;
+    padding: 80px 0;
+
+    h1 {
+      font-size: 2.5em;
+      padding-bottom: 20px;
+    }
+
+    p {
+      padding: 0 2.75em;
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+}
+
+.news-events h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.photoslide .item{
+  margin: 3px;
+}
+.photoslide .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
