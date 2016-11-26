@@ -35,7 +35,7 @@ gulp.task('sass', function() {
 
 // JavaScript
 gulp.task('js', function() {
-  return gulp.src(['./js/*.js'])
+  return gulp.src(['./js/dev/*.js'])
   .pipe(jshint())
   .pipe(jshint.reporter('default'))
   .pipe(concat('app.js'))
@@ -56,10 +56,11 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
+    open: false,
     proxy: 'http://localhost:8888/fairmount-co/',
   });
   gulp.watch('./sass/**/*.scss', ['sass', reload]);
-  gulp.watch('./js/*.js', ['js', reload]);
+  gulp.watch('./js/dev/*.js', ['js', reload]);
   gulp.watch('images/src/*', ['images', reload]);
 });
 

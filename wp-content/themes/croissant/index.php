@@ -53,12 +53,14 @@ get_header(); ?>
 
 			<section class="middle-block">
 				<div class="container about">
-					<div class="row">
+					<div class="row flex-items-xs-center">
 						<h1 class="col-xs-12">We Are<br />Fairmount&Co</h1>
-						<p class="col-xs-12">
+						<p class="col-xs-10 col-md-8">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
-						<a href="#" class="btn btn_dark">Learn More</a>
+						<div class="col-xs-12">
+							<a href="#" class="btn btn_dark">Learn More</a>
+						</div>
 					</div>
 				</div>
 
@@ -93,9 +95,8 @@ get_header(); ?>
 			</section>
 
 
-			<div class="container ">
-				<div class="row">
-					<div class="photoslide owl-theme">
+
+					<div class="owl-theme" id="homeSlide">
 						<div class="item"><img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/2.jpg" /></div>
 						<div class="item"><img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/1.jpg" /></div>
 						<div class="item"><img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/3.jpg" /></div>
@@ -103,8 +104,6 @@ get_header(); ?>
 						<div class="item"><img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/thumb.jpg" /></div>
 						<div class="item"><img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/2-1.jpg" /></div>
 					</div>
-				</div>
-			</div>
 
 
 

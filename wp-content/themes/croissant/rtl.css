@@ -836,10 +836,23 @@ a.btn {
   text-align: center;
   margin-bottom: 30px; }
 
-.photoslide .item {
+#homeSlide .item {
   margin: 3px; }
 
-.photoslide .item img {
+#homeSlide .item img {
   display: block;
   width: 100%;
   height: auto; }
+
+.owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.owl-stage-outer {
+  overflow: hidden; }
+
+footer.site-footer {
+  background-color: #232020;
+  color: #f1fffa;
+  text-align: center; }

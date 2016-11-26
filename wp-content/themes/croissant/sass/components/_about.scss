@@ -31,11 +31,17 @@
     margin-bottom: 30px;
 }
 
-.photoslide .item{
+#homeSlide .item{
   margin: 3px;
 }
-.photoslide .item img{
+#homeSlide .item img{
   display: block;
   width: 100%;
   height: auto;
+}
+.owl-stage {
+    display: flex;
+}
+.owl-stage-outer {
+  overflow: hidden;
 }
