@@ -26,7 +26,7 @@
 					<p><span>Monday</span>4:00pm - 2:00am</p>
 					<p><span>Monday</span>4:00pm - 2:00am</p>
 				</div>
-				<div class="col-xs-12 col-md-4">
+				<div class="footer-icon col-xs-12 col-md-4">
 					<img src="/fairmount-co/wp-content/uploads/2016/11/footer-glasses.png" />
 				</div>
 				<div class="address col-xs-12 col-md-4">

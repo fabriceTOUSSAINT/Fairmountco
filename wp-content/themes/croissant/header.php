@@ -15,7 +15,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono:400,700" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -30,12 +31,25 @@
 			<a class="navbar-brand" href="/fairmount-co">
 				<img class="nav-logo" src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/FCO_ALT_LOGO_2.png" height="50" alt="">
 		  </a>
+			<nav class="navbar navbar-light">
+				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+			    &#9776;
+			  </button>
+				<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
 			<?php wp_nav_menu( array(
 				'theme_location' => 'primary',
 				'menu_id' => 'primary-menu'
-			) ); ?>
+			) );
+
+			function add_menuClass($ulclass) {
+				return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+			}
+
+			add_filter('wp_nav_menu', 'add_menuclass');
+			?>
 		</div>
-	</nav><!-- #site-navigation -->
+	</div>
+</nav><!-- #site-navigation -->
 
 
 	</header><!-- #masthead -->

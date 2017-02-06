@@ -492,6 +492,43 @@ a.navbar-brand {
   padding: 10px 5%; }
   a.navbar-brand img.nav-logo {
     height: 55px; }
+    @media (max-width: 576px) {
+      a.navbar-brand img.nav-logo {
+        width: auto;
+        height: 42px;
+        left: 0;
+        position: fixed;
+        padding-left: 10px; } }
+  @media (max-width: 576px) {
+    a.navbar-brand {
+      padding: 16.5px 15px;
+      z-index: 9999;
+      display: block;
+      position: relative; } }
+
+.navbar {
+  background-color: #f1fffa; }
+
+@media (max-width: 576px) {
+  .nav.navbar-nav ul {
+    padding: 5px;
+    border-top: 1px solid #000;
+    margin-top: 30px;
+    width: 100%; }
+  .navbar-nav .nav-link {
+    float: none;
+    display: block;
+    text-align: right; }
+  .nav.navbar-nav .nav-item a {
+    display: block;
+    -webkit-transition: initial;
+    transition: initial;
+    -webkit-transition: none !important;
+    transition: none !important;
+    border: none; }
+    .nav.navbar-nav .nav-item a:hover {
+      border: none;
+      border-bottom: none; } }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -728,12 +765,115 @@ object {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+h1, h2 {
+  font-family: 'Droid Sans Mono', monospace; }
+
+.container.static-page {
+  margin: 40px auto; }
+
+.nav.navbar-nav .nav-item a:hover {
+  border-bottom: 3px solid #a2a1a1;
+  -webkit-transition: all ease .15s;
+  transition: all ease .15s; }
+
+.navbar {
+  background-color: #f1fffa;
+  padding: 17.5px 15px; }
+
+.nav.navbar-nav ul {
+  padding: 0; }
+
+@media (max-width: 756px) {
+  .navbar-nav .nav-link {
+    float: none;
+    display: inline-block;
+    padding-top: 0; }
+  .nav.navbar-nav ul {
+    width: 100%;
+    text-align: center; } }
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    float: none;
+    display: block;
+    text-align: right; }
+  .nav.navbar-nav ul {
+    padding: 5px;
+    padding-bottom: 15px;
+    border-top: 1px solid #000;
+    margin-top: 30px; }
+  .navbar {
+    background-color: #f1fffa;
+    padding: 0;
+    height: 75px; }
+  div#exCollapsingNavbar2 {
+    background-color: #f1fffa; }
+  .nav.navbar-nav .nav-item a {
+    display: block;
+    -webkit-transition: initial;
+    transition: initial;
+    -webkit-transition: none !important;
+    transition: none !important;
+    border: none;
+    padding-right: 20px; }
+    .nav.navbar-nav .nav-item a:hover {
+      border: none;
+      border-bottom: none; } }
+
+.navbar-light .navbar-toggler {
+  background-color: #f1fffa;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background-image: none;
+  box-shadow: none;
+  margin-right: 20px;
+  margin-top: 17.5px; }
+
+.navbar {
+  height: 75px; }
+  @media (max-width: 756px) {
+    .navbar {
+      height: 115px; } }
+  @media (max-width: 576px) {
+    .navbar {
+      height: 75px;
+      border-radius: 0; } }
+
+a.navbar-brand {
+  position: relative;
+  z-index: 9999; }
+  @media (max-width: 756px) {
+    a.navbar-brand {
+      display: block;
+      width: 100%;
+      text-align: center; } }
+  @media (max-width: 576px) {
+    a.navbar-brand {
+      width: auto; } }
+
+/* SUB-HEADER */
+.page-header {
+  background-image: url(//localhost:3000/fairmount-co/wp-content/uploads/2016/11/2-1.jpg);
+  padding: 50px;
+  color: #fff;
+  font-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .page-header h1 {
+    border-bottom: 2px solid #ccc;
+    width: 55%; }
+
 .hero {
   background-image: url("http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/thumb.jpg");
   height: 60vh;
   min-height: 600px;
   background-size: cover;
   background-position: center; }
+  @media (max-width: 576px) {
+    .hero {
+      height: 90vh;
+      min-height: 500px; } }
 
 .overlay {
   background: rgba(0, 0, 0, 0.4);
@@ -744,6 +884,10 @@ object {
   z-index: 10; }
   .hero-text-block * {
     color: #f1fffa; }
+  @media (max-width: 576px) {
+    .hero-text-block h1 {
+      font-size: 1em;
+      margin: 20px 5px; } }
   .hero-text-block .hero-img {
     padding-top: 80px;
     text-align: center; }
@@ -751,6 +895,9 @@ object {
       max-height: 250px;
       margin: 0 auto;
       display: block; }
+      @media (max-width: 576px) {
+        .hero-text-block .hero-img img {
+          padding: 20px; } }
 
 a.btn {
   border-radius: 5px;
@@ -788,6 +935,9 @@ a.btn {
     background-color: #4a2b03; }
     .sub-hero-cta .dinner-cta .cta-block:hover {
       background-color: rgba(74, 43, 3, 0.7); }
+    @media (max-width: 576px) {
+      .sub-hero-cta .dinner-cta .cta-block {
+        background-color: rgba(74, 43, 3, 0.7); } }
 
 .sub-hero-cta .drink-cta {
   background-image: url("http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/2-1.jpg"); }
@@ -795,6 +945,9 @@ a.btn {
     background-color: #0d1b2a; }
     .sub-hero-cta .drink-cta .cta-block:hover {
       background-color: rgba(13, 27, 42, 0.7); }
+    @media (max-width: 576px) {
+      .sub-hero-cta .drink-cta .cta-block {
+        background-color: rgba(13, 27, 42, 0.7); } }
 
 .sub-hero-cta .col-sm {
   text-align: center;
@@ -814,11 +967,19 @@ a.btn {
   color: #f1fffa;
   padding: 50px; }
 
+@media (max-width: 576px) {
+  a.btn_light {
+    background-color: #f1fffa;
+    color: #232020; } }
+
 .middle-block {
   background-image: url("http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/about-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
+  @media (max-width: 576px) {
+    .middle-block {
+      background-position: left; } }
 
 .about {
   text-align: center;
@@ -829,12 +990,57 @@ a.btn {
   .about p {
     padding: 0 2.75em;
     margin-bottom: 50px; }
+    @media (max-width: 576px) {
+      .about p {
+        padding: 0 .75em; } }
   .about .btn {
     margin: 0 auto; }
+  .about .row {
+    margin: 0; }
 
 .news-events h3 {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: 300; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .news-events {
+    width: 820px; } }
+
+.home-post {
+  margin: 0 -5px; }
+  .home-post span.ne_header_wrapper {
+    min-height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .home-post span.ne_header_wrapper h4 {
+      margin-top: auto;
+      margin-bottom: 10px;
+      font-weight: 600; }
+  .home-post p {
+    color: #7d7d7d; }
+  .home-post a {
+    color: #b3c27b;
+    font-weight: 600;
+    border-bottom: 3px solid #b3c27b;
+    width: 125px;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all ease .2s;
+    transition: all ease .2s; }
+    .home-post a:hover {
+      width: 100%; }
+
+.news-events .header span {
+  font-size: .8em;
+  font-weight: 600;
+  margin: 0 -10px; }
 
 #homeSlide .item {
   margin: 3px; }
@@ -852,7 +1058,20 @@ a.btn {
 .owl-stage-outer {
   overflow: hidden; }
 
+.owl-theme {
+  margin: 40px 0; }
+
 footer.site-footer {
   background-color: #232020;
   color: #f1fffa;
   text-align: center; }
+
+.hours {
+  margin: 50px 0 0; }
+  .hours p {
+    margin-bottom: 5px; }
+
+.footer-icon {
+  margin: 50px 0; }
+  .footer-icon img {
+    max-height: 100px; }

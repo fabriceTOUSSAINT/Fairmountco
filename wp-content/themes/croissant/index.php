@@ -37,14 +37,14 @@ get_header(); ?>
 							<div class="cta-block">
 								<h2>Dinning</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-								<a href="#" class='btn btn_light'>See Food Menu</a>
+								<a href="food-drink#foods" class='btn btn_light'>See Food Menu</a>
 							</div>
 						</div>
 						<div class="col-sm drink-cta">
 							<div class="cta-block">
 								<h2>Pub</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-								<a href="#" class='btn btn_light'>See Drink Menu</a>
+								<a href="food-drink#drinks" class='btn btn_light'>See Drink Menu</a>
 							</div>
 						</div>
 					</div>
@@ -55,32 +55,63 @@ get_header(); ?>
 				<div class="container about">
 					<div class="row flex-items-xs-center">
 						<h1 class="col-xs-12">We Are<br />Fairmount&Co</h1>
-						<p class="col-xs-10 col-md-8">
+						<p class="col-md">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 						<div class="col-xs-12">
-							<a href="#" class="btn btn_dark">Learn More</a>
+							<a href="about" class="btn btn_dark">Learn More</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="container news-events">
 					<div class="row">
-						<div class="col-sm-8">
-							<h3>News <span>&</span> Events</h3>
+						<div class="col-sm-8 news-events__block">
+							<h3 class="header">News <span>&</span> Events</h3>
 							<div class="row">
-								<div class="col-xs home-post">
+									<?php
+										$args = array( 'numberposts' => '2', 'tax_query' => array(
+												array(
+													'taxonomy' => 'post_format',
+													'field' => 'slug',
+													'terms' => 'post-format-aside',
+													'operator' => 'NOT IN'
+												),
+												array(
+													'taxonomy' => 'post_format',
+													'field' => 'slug',
+													'terms' => 'post-format-image',
+									 				'operator' => 'NOT IN'
+												)
+										) );
+										$recent_posts = wp_get_recent_posts( $args );
+										foreach( $recent_posts as $recent ){
+											echo '<div class="col-md home-post">';
+											echo '<span class="ne_header_wrapper"><h4>' . ( __($recent["post_title"])) . '</h4></span>';
+											echo '<p>' . get_excerpt($recent['post_content']) . '</p>';
+  										echo '<a href="' . get_permalink($recent["ID"]) . '">More Details</a>';
+											echo '</div>';
+										}
+										echo '<div class="vertical-border"></div>';
+										wp_reset_query();
+									?>
+
+								<!--
+								<div class="col-md home-post">
 									<h4>Lorem Isum</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 									<a href="#">More Details</a>
 								</div>
-								<div class="col-xs home-post">
+								<div class="col-md home-post">
 									<h4>Lorem Isum</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 									<a href="#">More Details</a>
-								</div>
+								</div> -->
+
+
+
 								<div class="col-xs-12 btn_wrapper">
-									<a href="#" class="btn btn_dark">Read More Events</a>
+									<a href="news-events" class="btn btn_dark">Read More Events</a>
 								</div>
 							</div>
 						</div>

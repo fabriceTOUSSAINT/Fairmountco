@@ -2,12 +2,19 @@ jQuery(function($) {
 
     $('#homeSlide').owlCarousel({
       loop:true,
-      margin:30,
       center:true,
       items:1,
       autoplay:true,
-      stagePadding:200
-
+      responsive: {
+        0: {
+          items: 1,
+          stagePadding: 15,
+          margin: 5
+        },
+        648: {
+          margin:30,
+          stagePadding: 200
+        }
+      }
   });
-
 });

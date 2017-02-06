@@ -132,6 +132,22 @@ function croissant_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'croissant_scripts' );
 
+function get_excerpt($excerpt){
+	$excerpt = preg_replace(" ([.*?])",'',$excerpt);
+	$excerpt = strip_shortcodes($excerpt);
+	$excerpt = strip_tags($excerpt);
+	$excerpt = substr($excerpt, 0, 140);
+	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+	$excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
+	$excerpt = $excerpt.' [...]';
+	return $excerpt;
+}
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 /**
  * Implement the Custom Header feature.
  */

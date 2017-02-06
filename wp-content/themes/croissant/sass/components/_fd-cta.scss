@@ -15,6 +15,9 @@
       &:hover{
         background-color: rgba(74, 43, 3, .7);
       }
+      @media (max-width: $media-sm) {
+        background-color: rgba(74, 43, 3, .7);
+      }
     }
   }
   .drink-cta {
@@ -23,6 +26,9 @@
     .cta-block {
       background-color: #0d1b2a;
       &:hover {
+        background-color: rgba(13, 27, 42, .7);
+      }
+      @media (max-width: $media-sm) {
         background-color: rgba(13, 27, 42, .7);
       }
     }
@@ -45,4 +51,11 @@
     color: #f1fffa;
     padding: 50px;
   }
+}
+a.btn_light {
+
+	@media (max-width: $media-sm){
+    background-color: #f1fffa;
+    color: #232020;
+	}
 }
