@@ -56,7 +56,7 @@ get_header(); ?>
 					<div class="row flex-items-xs-center">
 						<h1 class="col-xs-12">We Are<br />Fairmount&Co</h1>
 						<p class="col-md">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							Friendly, neighborhood pub with a passion for good beer and even better food. We pour from 17 rotating drafts and have over 150 bottles to choose from. We make sure to stock everyones favorites and serve our beer fresh as possible from the day we receive it.  Preparing and serving from scratch, our take on American comfort food. We try to source all our ingredients from as many local purveyors as possible and support as many local businesses in the process. Come by yourself or bring the whole family, everyone is welcome at Fairmount & Co.
 						</p>
 						<div class="col-xs-12">
 							<a href="about" class="btn btn_dark">Learn More</a>
