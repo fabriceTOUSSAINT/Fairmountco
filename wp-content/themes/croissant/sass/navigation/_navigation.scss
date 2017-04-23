@@ -7,3 +7,20 @@
 ## Menus
 --------------------------------------------------------------*/
 @import "menus";
+
+
+.navbar {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+
+@media (max-width: 576px){
+    .nav.navbar-nav ul {
+        padding: 5px !important;
+    }
+
+    .nav-item {
+        padding-bottom: 15px !important;
+    }
+}

@@ -115,7 +115,7 @@ class Daily_Specials_Admin {
 		}
 
 		public function display_plugin_setup_page() {
-	    include_once( 'partials/wp-cbf-admin-display.php' );
+			include_once('partials/daily-specials-admin-display.php');
 		}
 
 

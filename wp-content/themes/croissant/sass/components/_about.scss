@@ -12,7 +12,7 @@
 
 .about {
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 0 40px;
 
     h1 {
       font-size: 2.5em;
@@ -36,6 +36,13 @@
     }
 }
 
+
+.divider {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
 .news-events {
     h3 {
         text-align: center;
@@ -53,7 +60,7 @@
     margin: 0 -5px;
 
     span.ne_header_wrapper {
-      min-height:100px;
+      min-height: 50px;
       display: flex;
       flex-direction: column;
 
@@ -72,13 +79,13 @@
       color: #b3c27b;
       font-weight: 600;
       border-bottom: 3px solid #b3c27b;
-      width: 125px;
+      width: 120px;
       display: block;
       text-decoration: none;
       transition: all ease .2s;
 
       &:hover {
-        width: 100%;
+        width: 70%;
       }
   }
 }

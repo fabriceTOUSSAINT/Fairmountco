@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="overlay" />
 					<div class="container hero-text-block">
 						<div class="col-xs hero-img">
-							<img src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/FairmountCo_Final_White.png" />
+							<img src="/fairmount-co/wp-content/uploads/2016/11/FairmountCo_Final_White.png" />
 							<h1>Check out our Daily specials and happy hour</h1>
 							<a href="#" class='btn btn_light'>Here</a>
 						</div>
@@ -36,14 +36,14 @@ get_header(); ?>
 						<div class="col-sm dinner-cta">
 							<div class="cta-block">
 								<h2>Dinning</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p>Localy sourced dishes and cooking served from scratch, explore our food menu.</p>
 								<a href="food-drink#foods" class='btn btn_light'>See Food Menu</a>
 							</div>
 						</div>
 						<div class="col-sm drink-cta">
 							<div class="cta-block">
 								<h2>Pub</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<p>Pouring a rotating tap list from all over the USA, we have beer for enjoying in or taking out.</p>
 								<a href="food-drink#drinks" class='btn btn_light'>See Drink Menu</a>
 							</div>
 						</div>
@@ -62,6 +62,9 @@ get_header(); ?>
 							<a href="about" class="btn btn_dark">Learn More</a>
 						</div>
 					</div>
+				</div>
+				<div class="divider">
+					<img src="/fairmount-co/wp-content/uploads/2016/11/divider.png" alt="divider" />
 				</div>
 
 				<div class="container news-events">
