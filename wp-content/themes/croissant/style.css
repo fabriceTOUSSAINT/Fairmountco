@@ -686,6 +686,9 @@ a.navbar-brand {
 .croissant #content {
   margin-top: 75px; }
 
+.static-page {
+  padding: 0 20px; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -972,7 +975,11 @@ a.btn {
   height: 100%;
   width: 100%;
   color: #f1fffa;
-  padding: 50px; }
+  padding: 35px 50px; }
+  .sub-hero-cta .cta-block h2 {
+    margin-bottom: 15px; }
+  .sub-hero-cta .cta-block p {
+    min-height: 4.8em; }
 
 @media (max-width: 576px) {
   a.btn_light {
@@ -983,7 +990,8 @@ a.btn {
   background-image: url("http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/about-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  padding: 0 20px; }
   @media (max-width: 576px) {
     .middle-block {
       background-position: left; } }

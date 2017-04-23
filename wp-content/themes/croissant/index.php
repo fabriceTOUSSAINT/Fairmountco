@@ -36,7 +36,7 @@ get_header(); ?>
 						<div class="col-sm dinner-cta">
 							<div class="cta-block">
 								<h2>Dinning</h2>
-								<p>Localy sourced dishes and cooking served from scratch, explore our food menu.</p>
+								<p>Locally sourced dishes and cooking served from scratch, explore our food menu.</p>
 								<a href="food-drink#foods" class='btn btn_light'>See Food Menu</a>
 							</div>
 						</div>
