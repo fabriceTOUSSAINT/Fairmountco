@@ -118,11 +118,8 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4">
-							<h3>Daily Specials</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
+						<div class="col-sm-4 daily-specials">
+							<?php echo do_shortcode('[fdm-menu id=63]'); ?>
 						</div>
 					</div>
 				</div>

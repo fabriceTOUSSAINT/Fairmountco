@@ -1,11 +1,11 @@
 a.btn {
-    border-radius: 5px;
-    padding: 8px 25px;
+    border-radius: 3px;
+    padding: 5px 20px;
     text-decoration: none;
     @include prefix(transition, all ease  .15s, webkit ms);
 
     &_light {
-      border: solid #f1fffa 2px;
+      border: solid #f1fffa 1px;
       color: #f1fffa;
 
       &:hover {
@@ -15,7 +15,7 @@ a.btn {
     }
 
     &_dark {
-        border: solid $color__text-main 2px;
+        border: solid $color__text-main 1px;
         color: $color__text-main;
 
         &:hover {
