@@ -123,4 +123,10 @@
 		width: 100%;
 	}
 
+	.daily-specials .fdm-item-price-wrapper {
+		width: auto !important;
+		margin-bottom: 5px !important;
+	}
+
+
 }

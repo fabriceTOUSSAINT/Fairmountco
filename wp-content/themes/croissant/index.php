@@ -69,7 +69,7 @@ get_header(); ?>
 
 				<div class="container news-events">
 					<div class="row">
-						<div class="col-sm-8 news-events__block">
+						<div class="col-md-7 news-events__block">
 							<h3 class="header">News <span>&</span> Events</h3>
 							<div class="row">
 									<?php
@@ -118,7 +118,7 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-4 daily-specials">
+						<div class="col-md-5 daily-specials">
 							<?php echo do_shortcode('[fdm-menu id=63]'); ?>
 						</div>
 					</div>
