@@ -30,7 +30,7 @@
 
 		<div class="nav navbar-nav">
 			<a class="navbar-brand" href="/fairmount-co">
-				<img class="nav-logo" src="http://localhost:8888/fairmount-co/wp-content/uploads/2016/11/FCO_ALT_LOGO_2.png" height="50" alt="">
+				<img class="nav-logo" src="wp-content/uploads/2016/11/FCO_ALT_LOGO_2.png" height="50" alt="">
 		  </a>
 			<nav class="navbar navbar-light">
 				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
 			) );
 
 			function add_menuClass($ulclass) {
-				return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
+				return preg_replace('/<a /', '<a class="nav-link jawn"', $ulclass);
 			}
 
 			add_filter('wp_nav_menu', 'add_menuclass');

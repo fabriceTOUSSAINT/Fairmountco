@@ -1005,7 +1005,7 @@ a.btn {
   .about p {
     padding: 0 2.75em;
     margin-bottom: 50px; }
-    @media (max-width: 576px) {
+    @media screen and (max-width: 576px) {
       .about p {
         padding: 0 .75em; } }
   .about .btn {
@@ -1047,7 +1047,7 @@ a.btn {
   padding-left: 0px; }
 
 .news-events .daily-specials .fdm-item-content {
-  padding-right: 15px; }
+  padding-right: 10px; }
 
 .news-events .daily-specials .fdm-item-panel {
   margin-bottom: 5px; }
@@ -1059,9 +1059,14 @@ a.btn {
 .news-events .daily-specials li.fdm-section-header {
   border: none; }
 
-.home-post {
+@media screen and (max-width: 576px) {
+  .news-events .daily-specials .fdm-item-price-wrapper {
+    width: auto !important;
+    margin-bottom: 5px !important; } }
+
+.news-events .home-post {
   margin: 0 0 20px -5px; }
-  .home-post span.ne_header_wrapper {
+  .news-events .home-post span.ne_header_wrapper {
     min-height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1070,13 +1075,13 @@ a.btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .home-post span.ne_header_wrapper h4 {
+    .news-events .home-post span.ne_header_wrapper h4 {
       margin-top: auto;
       margin-bottom: 10px;
       font-weight: 600; }
-  .home-post p {
+  .news-events .home-post p {
     color: #7d7d7d; }
-  .home-post a {
+  .news-events .home-post a {
     color: #b3c27b;
     font-weight: 600;
     border-bottom: 3px solid #b3c27b;
@@ -1085,32 +1090,35 @@ a.btn {
     text-decoration: none;
     -webkit-transition: all ease .2s;
     transition: all ease .2s; }
-    .home-post a:hover {
+    .news-events .home-post a:hover {
       width: 70%; }
 
-.news-events .header span {
+.news-events .news-events .header span {
   font-size: .8em;
   font-weight: 600;
   margin: 0 -10px; }
 
-#homeSlide .item {
+.news-events #homeSlide .item {
   margin: 3px; }
 
-#homeSlide .item img {
+.news-events #homeSlide .item img {
   display: block;
   width: 100%;
   height: auto; }
 
-.owl-stage {
+.news-events .owl-stage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.owl-stage-outer {
+.news-events .owl-stage-outer {
   overflow: hidden; }
 
-.owl-theme {
+.news-events .owl-theme {
   margin: 40px 0; }
+
+.container.news-events {
+  padding-bottom: 80px; }
 
 footer.site-footer {
   background-color: #232020;
